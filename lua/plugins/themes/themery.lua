@@ -4,11 +4,9 @@ return {
 	config = function()
 		require("themery").setup({
 			themes = {
-				{ name = "Tokyo Night", colorscheme = "tokyonight" },
-				{ name = "Solarized Osaka", colorscheme = "solarized-osaka" },
-				{ name = "Kanagawa", colorscheme = "kanagawa" },
-				-- { name = "Catppuccin", colorscheme = "catppuccin" },
 				{ name = "Catppuccin", colorscheme = "catppuccin" },
+				{ name = "Flow", colorscheme = "flow" },
+				{ name = "Kanagawa", colorscheme = "kanagawa" },
 				{
 					name = "Nightfly",
 					colorscheme = "nightfly",
@@ -17,6 +15,8 @@ return {
 						vim.g.nightFlyTransparent = true
 					]],
 				},
+				{ name = "Solarized Osaka", colorscheme = "solarized-osaka" },
+				{ name = "Tokyo Night", colorscheme = "tokyonight" },
 			},
 			themeConfigFile = "~/.config/nvim/lua/jero/themeconfig.lua",
 			LivePreview = true,

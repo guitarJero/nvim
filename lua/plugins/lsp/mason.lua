@@ -29,7 +29,9 @@ return {
 			ensure_installed = {
 				"tsserver",
 				"html",
+				-- "golsp",
 				"cssls",
+				"clangd",
 				-- "tailwindcss",
 				-- "svelte",
 				"lua_ls",
