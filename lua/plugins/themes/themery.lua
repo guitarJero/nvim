@@ -18,7 +18,6 @@ return {
 				{ name = "Solarized Osaka", colorscheme = "solarized-osaka" },
 				{ name = "Tokyo Night", colorscheme = "tokyonight" },
 			},
-			themeConfigFile = "~/.config/nvim/lua/jero/themeconfig.lua",
 			LivePreview = true,
 		})
 	end,

@@ -5,6 +5,8 @@ vim.g.maplocalleader = " "
 local keymap = vim.keymap
 keymap.set("i", "kj", "<ESC>", { desc = "Exit Insert mode" })
 keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
+keymap.set("n", "<leader>nn", ":Noice dismiss<CR>", { desc = "Dismiss noice messages." })
+keymap.set("n", "ww", ":set wrap!<CR>")
 
 -- vim.keymap.set("i", "<C-BS>", "<Esc>cvb", {})
 keymap.set("n", "<C-BS>", "ciw", { desc = "delete word" })
@@ -31,3 +33,18 @@ keymap.set("n", "<leader>tq", "<cmd>tabclose<CR>", { desc = "Close current tab" 
 keymap.set("n", "<leader>tn", "<cmd>tabn<CR>", { desc = "Go to next tab" })
 keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to previous tab" })
 keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Move current buffer to a new tab" })
+
+-- Alternate Toggler
+keymap.set(
+	"n",
+	"gk", -- <space><space>
+	"<cmd>lua require('alternate-toggler').toggleAlternate()<CR>",
+	{ desc = "Toggle alternate value" }
+)
+
+-- Move around quicklist
+keymap.set("n", "<leader>q", ":cnext<CR>", { desc = "Go to next in quicklist" })
+keymap.set("n", "<leader>Q", ":cprev<CR>", { desc = "Go to previous in quicklist" })
+
+-- Go to the end of the line in insert mode, (helpful to get outside of automatically closed parentheses, quotations marks, etc)
+keymap.set("i", ",,", "<C-o>A", { desc = "Go to the end of the line without exiting insert mode" })
