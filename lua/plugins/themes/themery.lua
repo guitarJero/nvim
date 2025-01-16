@@ -19,6 +19,8 @@ return {
 				{ name = "Tokyo Night", colorscheme = "tokyonight" },
 			},
 			LivePreview = true,
+			themeConfigFile = "~/.config/nvim/lua/jero/themeconfig.lua",
 		})
+		vim.keymap.set("n", "<leader>th", "<cmd>Themery<CR>", { desc = "Show Theme Selector" })
 	end,
 }
