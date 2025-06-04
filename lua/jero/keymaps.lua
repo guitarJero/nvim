@@ -27,6 +27,12 @@ keymap.set("n", "<leader>se", "<C-w>=", { desc = "Make splits equal size" })
 keymap.set("n", "<leader>sq", "<cmd>close<CR>", { desc = "Close current split" })
 keymap.set("n", "<leader>ww", "<cmd>set wrap!<CR>")
 
+-- " Use ctrl-[hjkl] to select the active split!
+keymap.set("n", "<C-k>", "<C-w>k", { desc = "Go to split window above"})
+keymap.set("n", "<C-j>", "<C-w>j", { desc = "Go to split window below"})
+keymap.set("n", "<C-h>", "<C-w>h", { desc = "Go to split window to the left"})
+keymap.set("n", "<C-l>", "<C-w>l", { desc = "Go to split window to the right"})
+
 -- Tab management
 keymap.set("n", "<leader>tt", "<cmd>tabnew<CR>", { desc = "Create new tab" })
 keymap.set("n", "<leader>tq", "<cmd>tabclose<CR>", { desc = "Close current tab" })
