@@ -6,7 +6,7 @@ local keymap = vim.keymap
 keymap.set("i", "kj", "<ESC>", { desc = "Exit Insert mode" })
 keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
 keymap.set("n", "<leader>nn", ":Noice dismiss<CR>", { desc = "Dismiss noice messages." })
-keymap.set("n", "ww", ":set wrap!<CR>")
+keymap.set("n", "<leader>ww", ":set wrap!<CR>")
 
 -- vim.keymap.set("i", "<C-BS>", "<Esc>cvb", {})
 keymap.set("n", "<C-BS>", "ciw", { desc = "delete word" })
@@ -25,7 +25,6 @@ keymap.set("n", "<leader>s-", "<C-w>s", { desc = "Split window vertically" })
 keymap.set("n", "<leader>s|", "<C-w>v", { desc = "Split window horizontally" })
 keymap.set("n", "<leader>se", "<C-w>=", { desc = "Make splits equal size" })
 keymap.set("n", "<leader>sq", "<cmd>close<CR>", { desc = "Close current split" })
-keymap.set("n", "<leader>ww", "<cmd>set wrap!<CR>")
 
 -- " Use ctrl-[hjkl] to select the active split!
 keymap.set("n", "<C-k>", "<C-w>k", { desc = "Go to split window above"})

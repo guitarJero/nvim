@@ -4,7 +4,7 @@ return {
 	name = "flow",
 	priority = 1000,
 	opts = {},
-	config = function()
-		require("flow").setup_options({})
-	end,
+	-- config = function()
+	-- 	require("flow").setup_options({})
+	-- end,
 }
