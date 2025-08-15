@@ -6,7 +6,7 @@ local keymap = vim.keymap
 keymap.set("i", "kj", "<ESC>", { desc = "Exit Insert mode" })
 keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
 keymap.set("n", "<leader>nn", ":Noice dismiss<CR>", { desc = "Dismiss noice messages." })
-keymap.set("n", "ww", ":set wrap!<CR>")
+keymap.set("n", "<leader>ww", ":set wrap!<CR>")
 
 -- vim.keymap.set("i", "<C-BS>", "<Esc>cvb", {})
 keymap.set("n", "<C-BS>", "ciw", { desc = "delete word" })
@@ -47,3 +47,6 @@ keymap.set("n", "<leader>Q", ":cprev<CR>", { desc = "Go to previous in quicklist
 
 -- Go to the end of the line in insert mode, (helpful to get outside of automatically closed parentheses, quotations marks, etc)
 keymap.set("i", ",,", "<C-o>A", { desc = "Go to the end of the line without exiting insert mode" })
+
+-- Exit insert mode in terminal mode
+keymap.set("t", "<ESC>", "<C-\\><C-n>", { desc = "Exit insert in terminal mode" })
