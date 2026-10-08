@@ -22,6 +22,16 @@ vim.keymap.set("n", "<C-j>", "<C-w>j", { desc = "Go Down" })
 vim.keymap.set("n", "<C-k>", "<C-w>k", { desc = "Go Up" })
 vim.keymap.set("n", "<C-l>", "<C-w>l", { desc = "Go Right" })
 
+-- ════════════════════════════════════════════════════════════════════════════
+-- Window Navigation (with smart-splits)
+-- ════════════════════════════════════════════════════════════════════════════
+-- local smart_splits = require("smart-splits")
+
+-- vim.keymap.set("n", "<C-h>", smart_splits.move_cursor_left)
+-- vim.keymap.set("n", "<C-j>", smart_splits.move_cursor_down)
+-- vim.keymap.set("n", "<C-k>", smart_splits.move_cursor_up)
+-- vim.keymap.set("n", "<C-l>", smart_splits.move_cursor_right)
+
 -- Window resizing
 vim.keymap.set("n", "<C-Up>", "<cmd>resize +2<cr>", { desc = "Increase Height" })
 vim.keymap.set("n", "<C-Down>", "<cmd>resize -2<cr>", { desc = "Decrease Height" })
@@ -74,7 +84,12 @@ vim.keymap.set("v", "p", '"_dP', { desc = "Paste (no yank)" })
 vim.keymap.set("n", "YY", "va{Vy", { desc = "Yank Block {}" })
 
 -- Split line (opposite of J)
-vim.keymap.set("n", "X", ":keeppatterns substitute/\\s*\\%#\\s*/\\r/e <bar> normal! ==^<cr>", { desc = "Split Line", silent = true })
+vim.keymap.set(
+  "n",
+  "X",
+  ":keeppatterns substitute/\\s*\\%#\\s*/\\r/e <bar> normal! ==^<cr>",
+  { desc = "Split Line", silent = true }
+)
 
 -- Select all
 vim.keymap.set("n", "<C-a>", "ggVG", { desc = "Select All" })
