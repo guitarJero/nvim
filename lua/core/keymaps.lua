@@ -17,10 +17,10 @@ vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<cr>", { desc = "Clear Highlight", 
 -- Window Navigation (no prefix for speed)
 -- ════════════════════════════════════════════════════════════════════════════
 
-vim.keymap.set("n", "<C-h>", "<C-w>h", { desc = "Go Left" })
-vim.keymap.set("n", "<C-j>", "<C-w>j", { desc = "Go Down" })
-vim.keymap.set("n", "<C-k>", "<C-w>k", { desc = "Go Up" })
-vim.keymap.set("n", "<C-l>", "<C-w>l", { desc = "Go Right" })
+-- vim.keymap.set("n", "<C-h>", "<C-w>h", { desc = "Go Left" })
+-- vim.keymap.set("n", "<C-j>", "<C-w>j", { desc = "Go Down" })
+-- vim.keymap.set("n", "<C-k>", "<C-w>k", { desc = "Go Up" })
+-- vim.keymap.set("n", "<C-l>", "<C-w>l", { desc = "Go Right" })
 
 -- ════════════════════════════════════════════════════════════════════════════
 -- Window Navigation (with smart-splits)
